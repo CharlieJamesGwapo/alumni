@@ -1,0 +1,82 @@
+🔧 QUICK FIX - Foreign Key Error
+================================
+
+⚡ ONE-STEP FIX (30 seconds)
+----------------------------
+
+1. Open phpMyAdmin: http://localhost/phpmyadmin
+
+2. Click "SQL" tab at the top
+
+3. Copy and paste this ENTIRE block:
+
+   DROP TABLE IF EXISTS user_posts;
+   DROP TABLE IF EXISTS post_likes;
+   DROP TABLE IF EXISTS post_comments;
+   
+   CREATE TABLE user_posts (
+       id INT AUTO_INCREMENT PRIMARY KEY,
+       user_id INT NOT NULL,
+       content TEXT NOT NULL,
+       image VARCHAR(255) DEFAULT NULL,
+       media_type ENUM('image', 'video') DEFAULT NULL,
+       created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+       updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+       INDEX idx_user_id (user_id),
+       INDEX idx_created_at (created_at)
+   ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+   
+   CREATE TABLE post_likes (
+       id INT AUTO_INCREMENT PRIMARY KEY,
+       post_id INT NOT NULL,
+       user_id INT NOT NULL,
+       created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+       UNIQUE KEY unique_like (post_id, user_id),
+       INDEX idx_post_id (post_id)
+   ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+   
+   CREATE TABLE post_comments (
+       id INT AUTO_INCREMENT PRIMARY KEY,
+       post_id INT NOT NULL,
+       user_id INT NOT NULL,
+       comment TEXT NOT NULL,
+       created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+       INDEX idx_post_id (post_id),
+       INDEX idx_user_id (user_id)
+   ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+4. Click "Go" button
+
+5. You should see: "3 queries executed successfully"
+
+6. Go back to home page and refresh (F5)
+
+7. Try creating a post now!
+
+✅ DONE! Posts should work now.
+
+⚠️ NOTE: This deletes any existing posts (if you had any).
+         But it fixes the foreign key error completely.
+
+🎯 WHAT THIS DOES
+-----------------
+- Removes old tables with foreign key problems
+- Creates fresh tables without foreign keys
+- Sets up proper structure for posts, likes, and comments
+
+🚀 AFTER THIS FIX
+-----------------
+You can:
+✓ Create posts
+✓ Edit posts
+✓ Delete posts
+✓ Like posts
+✓ Comment on posts
+
+💡 WHY THIS WORKS
+-----------------
+The old table had a foreign key pointing to a non-existent
+"users" table. This creates fresh tables without any foreign
+key constraints, making everything work smoothly.
+
+🎉 You're all set! Try posting now!

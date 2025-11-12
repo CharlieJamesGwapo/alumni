@@ -1,0 +1,12 @@
+[03-Sep-2025 20:39:43 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function apcu_fetch() in C:\xampp\htdocs\alumni\home.php:298
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\alumni\home.php on line 298
+[03-Sep-2025 20:39:46 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function apcu_fetch() in C:\xampp\htdocs\alumni\home.php:298
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\alumni\home.php on line 298
+[03-Sep-2025 20:40:46 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function apcu_fetch() in C:\xampp\htdocs\alumni\home.php:298
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\alumni\home.php on line 298

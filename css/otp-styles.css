@@ -1,0 +1,128 @@
+.otp-section {
+    background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 16px;
+    padding: 2rem;
+    border: 1px solid rgba(255,255,255,0.1);
+    margin: 1.5rem 0;
+    display: none;
+    animation: slideDown 0.3s ease-out;
+}
+
+.otp-inputs {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin: 1.5rem 0;
+}
+
+.otp-input {
+    width: 45px;
+    height: 45px;
+    border: 2px solid rgba(255,255,255,0.2);
+    border-radius: 12px;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #fff;
+    background: rgba(255,255,255,0.1);
+    transition: all 0.3s ease;
+}
+
+.otp-input:focus {
+    border-color: var(--primary);
+    background: rgba(255,255,255,0.15);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.otp-input.filled {
+    border-color: var(--success);
+    background: rgba(40,167,69,0.1);
+}
+
+.otp-timer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: rgba(255,255,255,0.8);
+    font-size: 0.9rem;
+    margin: 1rem 0;
+}
+
+.otp-timer.expired {
+    color: var(--danger);
+}
+
+.btn-send-otp {
+    background: transparent;
+    border: 2px solid rgba(255,255,255,0.3);
+    color: #fff;
+    border-radius: 12px;
+    padding: 10px 24px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-send-otp:not(:disabled):hover {
+    background: rgba(255,255,255,0.1);
+    border-color: rgba(255,255,255,0.5);
+    transform: translateY(-2px);
+}
+
+.btn-send-otp:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.spinner {
+    display: none;
+    width: 16px;
+    height: 16px;
+    border: 2px solid rgba(255,255,255,0.3);
+    border-top-color: #fff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Mobile Responsive */
+@media (max-width: 576px) {
+    .otp-section {
+        padding: 1.5rem;
+    }
+
+    .otp-inputs {
+        gap: 8px;
+    }
+
+    .otp-input {
+        width: 40px;
+        height: 40px;
+        font-size: 1.1rem;
+    }
+
+    .btn-send-otp {
+        width: 100%;
+        justify-content: center;
+    }
+}

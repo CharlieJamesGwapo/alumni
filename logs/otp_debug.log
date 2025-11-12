@@ -1,0 +1,135 @@
+[2025-09-02 03:29:06] SEND: contact=capstonee2@gmail.com otp=434715
+[2025-09-02 03:29:13] RECV_VERIFY contact=capstonee2@gmail.com otp=434715
+[2025-09-02 03:32:07] RECV_SEND method=email contact=capstonee2@gmail.com raw={"contact":"capstonee2@gmail.com","method":"email","email":"capstonee2@gmail.com"}
+[2025-09-02 03:32:11] SEND: contact=capstonee2@gmail.com otp=742910
+[2025-09-02 03:32:19] RECV_VERIFY contact=capstonee2@gmail.com otp=742910 session="capstonee2@gmail.com"
+[2025-09-02 03:33:47] RECV_SEND method=sms contact=09856122843 raw={"contact":"09856122843","method":"sms","email":"09856122843"}
+[2025-09-02 03:33:57] RECV_SEND method=sms contact=09856122843 raw={"contact":"09856122843","method":"sms","email":"09856122843"}
+[2025-09-02 03:34:13] RECV_SEND method=sms contact=09856122843 raw={"contact":"09856122843","method":"sms","email":"09856122843"}
+[2025-09-02 03:34:25] RECV_VERIFY contact=09856122843 otp=121 session="09856122843"
+[2025-09-02 03:34:39] RECV_VERIFY contact=09856122843 otp=748532 session="09856122843"
+Z[2025-09-02 03:37:04] RECV_SEND method=email contact=capstonee2@gmail.com raw={"contact":"capstonee2@gmail.com","method":"email","email":"capstonee2@gmail.com"}
+[2025-09-02 03:37:08] SEND: contact=capstonee2@gmail.com otp=805709
+[2025-09-02 03:37:22] RECV_VERIFY contact=capstonee2@gmail.com otp=805709 session="capstonee2@gmail.com"
+[2025-09-02 03:42:48] RECV_VERIFY contact=capstonee2@gmail.com otp=805709 session=""
+[2025-09-02 03:42:48] VERIFY_DB_ROW contact=capstonee2@gmail.com id=60 stored_otp=805709 used=0 expires_at=2025-09-02 03:42:04
+[2025-09-02 03:42:48] VERIFY_FIX_EXPIRY contact=capstonee2@gmail.com id=60 using_virtual_expires=2025-09-02 09:42:04
+[2025-09-02 03:42:48] VERIFY_ROW_ACCEPTED id=60 contact=capstonee2@gmail.com otp_provided=805709
+[2025-09-02 03:42:48] VERIFY_SUCCESS id=60 contact=capstonee2@gmail.com otp=805709
+[2025-09-02 03:47:14] RECV_SEND method=email contact=capstonee2@gmail.com raw={"contact":"capstonee2@gmail.com","method":"email","email":"capstonee2@gmail.com"}
+[2025-09-02 03:47:14] SEND_PERSIST contact=capstonee2@gmail.com stored_otp=170842 expires_at=2025-09-02 09:52:14
+[2025-09-02 03:47:18] SEND: contact=capstonee2@gmail.com otp=170842
+[2025-09-02 03:48:16] RECV_VERIFY contact=capstonee2@gmail.com otp=755590 session="capstonee2@gmail.com"
+[2025-09-02 03:48:16] VERIFY_DB_ROW contact=capstonee2@gmail.com id=60 stored_otp=170842 used=0 expires_at=2025-09-02 09:52:14
+[2025-09-02 03:48:16] VERIFY_MISMATCH contact=capstonee2@gmail.com provided=755590 stored=170842
+[2025-09-02 09:56:38] SEND_SIGNUP: contact=capstonee2@gmail.com otp=492697 alumni_id=CC-2502
+DB connect error in send_signup_otp: No connection could be made because the target machine actively refused it[2025-09-02 09:59:41] SEND_SIGNUP: contact=09856122843 otp=891972 alumni_id=CC-2501
+[2025-09-02 10:00:40] SEND_SIGNUP: contact=capstonee2@gmail.com otp=647804 alumni_id=CC-2502
+[2025-09-02 10:00:52] RECV_VERIFY_SIGNUP: contact=capstonee2@gmail.com otp=647804 alumni_id=CC-2502
+[2025-09-02 10:13:48] SEND_SIGNUP: contact=capstonee2@gmail.com otp=832023 alumni_id=CC-2502
+[2025-09-02 10:14:04] RECV_VERIFY_SIGNUP: contact=capstonee2@gmail.com otp=832023 alumni_id=CC-2502
+[2025-09-02 10:15:05] SEND_SIGNUP: contact=09856122843 otp=237272 alumni_id=CC-2502
+[2025-09-02 10:15:05] SEND_SIGNUP: sms_sent_textblaster to=09856122843 otp=237272 alumni_id=CC-2502 http=200 resp=SMS sent successfully to 09856122843
+[2025-09-02 10:15:20] RECV_VERIFY_SIGNUP: contact=09856122843 otp=237272 alumni_id=CC-2502
+[2025-09-02 10:16:03] SEND_SIGNUP: contact=capstonee2@gmail.com otp=403426 alumni_id=CC-2502
+[2025-09-02 10:16:12] RECV_VERIFY_SIGNUP: contact=capstonee2@gmail.com otp=403426 alumni_id=CC-2502
+[2025-09-02 10:23:57] SEND_SIGNUP: contact=capstonee2@gmail.com otp=859340 alumni_id=CC-2502
+[2025-09-02 10:24:22] RECV_VERIFY_SIGNUP: contact=capstonee2@gmail.com otp=859340 alumni_id=CC-2502
+[2025-09-02 10:29:11] SEND_SIGNUP: contact=capstonee2@gmail.com otp=455531 alumni_id=CC-2502
+[2025-09-02 10:29:23] RECV_VERIFY_SIGNUP: contact=capstonee2@gmail.com otp=455531 alumni_id=CC-2502
+[2025-09-02 10:34:23] SEND_SIGNUP: contact=capstonee2@gmail.com otp=494168 alumni_id=CC-2502
+[2025-09-02 10:34:42] RECV_VERIFY_SIGNUP: contact=capstonee2@gmail.com otp=494168 alumni_id=CC-2502
+[2025-09-02 10:43:04] SEND_SIGNUP: contact=paulinmgrayos@gmail.com otp=813598 alumni_id=CC-2503
+[2025-09-02 10:43:20] RECV_VERIFY_SIGNUP: contact=paulinmgrayos@gmail.com otp=813598 alumni_id=CC-2503
+[2025-09-02 10:43:47] SEND_SIGNUP: contact=paulinmgrayos@gmail.com otp=470019 alumni_id=CC-2503
+[2025-09-02 10:44:05] RECV_VERIFY_SIGNUP: contact=paulinmgrayos@gmail.com otp=470019 alumni_id=CC-2503
+[2025-09-02 10:44:32] SEND_SIGNUP: contact=paulinmgrayos@gmail.com otp=880596 alumni_id=CC-2503
+[2025-09-02 10:44:47] RECV_VERIFY_SIGNUP: contact=paulinmgrayos@gmail.com otp=880596 alumni_id=CC-2503
+[2025-09-02 10:52:12] SEND_SIGNUP: contact=paulinmgrayos@gmail.com otp=542650 alumni_id=CC-2503
+[2025-09-02 10:52:27] RECV_VERIFY_SIGNUP: contact=paulinmgrayos@gmail.com otp=542650 alumni_id=CC-2503
+[2025-09-02 10:52:56] SEND_SIGNUP: contact=09856122843 otp=270795 alumni_id=CC-2503
+[2025-09-02 10:52:57] SEND_SIGNUP: sms_sent_textblaster to=09856122843 otp=270795 alumni_id=CC-2503 http=200 resp=SMS sent successfully to 09856122843
+[2025-09-02 10:53:11] RECV_VERIFY_SIGNUP: contact=09856122843 otp=270795 alumni_id=CC-2503
+[2025-09-02 10:53:31] SEND_SIGNUP: contact=09856122843 otp=831178 alumni_id=CC-2503
+[2025-09-02 10:53:31] SEND_SIGNUP: sms_sent_textblaster to=09856122843 otp=831178 alumni_id=CC-2503 http=200 resp=SMS sent successfully to 09856122843
+[2025-09-02 10:53:52] RECV_VERIFY_SIGNUP: contact=09856122843 otp=831178 alumni_id=CC-2503
+[2025-09-02 18:57:23] SEND_SIGNUP: contact=capstonee2@gmail.com otp=239821 alumni_id=CC-2502
+[2025-09-02 18:58:26] SEND_SIGNUP: contact=capstonee2@gmail.com otp=628745 alumni_id=CC-2502
+[2025-09-02 18:58:46] RECV_VERIFY_SIGNUP: contact=capstonee2@gmail.com otp=628745 alumni_id=CC-2502
+[2025-09-02 18:59:14] SEND_SIGNUP: contact=09856122843 otp=223221 alumni_id=CC-2502
+[2025-09-02 18:59:16] SEND_SIGNUP: sms_sent_textblaster to=09856122843 otp=223221 alumni_id=CC-2502 http=200 resp=SMS sent successfully to 09856122843
+[2025-09-02 18:59:36] RECV_VERIFY_SIGNUP: contact=09856122843 otp=223221 alumni_id=CC-2502
+[2025-09-02 19:04:10] SEND_SIGNUP: contact=capstonee2@gmail.com otp=787574 alumni_id=CC-2502
+[2025-09-02 19:04:26] RECV_VERIFY_SIGNUP: contact=capstonee2@gmail.com otp=787574 alumni_id=CC-2502
+[2025-09-03 20:59:25] SEND_SIGNUP: contact=09856122843 otp=678235 alumni_id=CC-2502
+[2025-09-03 20:59:27] SEND_SIGNUP: sms_sent_textblaster to=09856122843 otp=678235 alumni_id=CC-2502 http=200 resp=SMS sent successfully to 09856122843
+[2025-09-03 20:59:39] RECV_VERIFY_SIGNUP: contact=09856122843 otp=678235 alumni_id=CC-2502
+[2025-09-03 21:00:03] SEND_SIGNUP: contact=capstonee2@gmail.com otp=918653 alumni_id=CC-2502
+[2025-09-03 22:29:29] SEND_SIGNUP: contact=capstonee2@gmail.com otp=780185 alumni_id=CC-2502
+[2025-09-03 22:29:51] RECV_VERIFY_SIGNUP: contact=capstonee2@gmail.com otp=780185 alumni_id=CC-2502
+[2025-09-03 22:30:24] SEND_SIGNUP: contact=09856122843 otp=201090 alumni_id=CC-2502
+[2025-09-03 22:30:28] SEND_SIGNUP: textblaster_failed to=09856122843 http=0 err=Failed to connect to 192.168.1.30 port 8080: Connection refused resp=
+[2025-09-03 22:31:31] SEND_SIGNUP: contact=09856122843 otp=543729 alumni_id=CC-2502
+[2025-09-03 22:31:32] SEND_SIGNUP: sms_sent_textblaster to=09856122843 otp=543729 alumni_id=CC-2502 http=200 resp=SMS sent successfully to 09856122843
+[2025-09-03 22:31:42] RECV_VERIFY_SIGNUP: contact=09856122843 otp=543729 alumni_id=CC-2502
+[2025-09-05 13:51:24] SEND_SIGNUP: contact=09856122843 otp=389409 alumni_id=CC-2502
+[2025-09-05 13:51:24] SEND_SIGNUP: sms_sent_textblaster to=09856122843 otp=389409 alumni_id=CC-2502 http=200 resp=SMS sent successfully to 09856122843
+[2025-09-05 13:52:47] SEND_SIGNUP: contact=09856122843 otp=770436 alumni_id=CC-2502
+[2025-09-05 13:52:47] SEND_SIGNUP: sms_sent_textblaster to=09856122843 otp=770436 alumni_id=CC-2502 http=200 resp=SMS sent successfully to 09856122843
+[2025-09-05 13:54:11] SEND_SIGNUP: contact=09856122843 otp=140047 alumni_id=CC-2502
+[2025-09-05 13:54:21] SEND_SIGNUP: textblaster_failed to=09856122843 http=0 err=Connection timed out after 10016 milliseconds resp=
+[2025-09-05 13:55:12] SEND_SIGNUP: contact=09856122843 otp=990139 alumni_id=CC-2502
+[2025-09-05 13:55:12] SEND_SIGNUP: sms_sent_textblaster to=09856122843 otp=990139 alumni_id=CC-2502 http=200 resp=SMS sent successfully to 09856122843
+[2025-09-05 13:56:44] SEND_SIGNUP: contact=09856122843 otp=511082 alumni_id=CC-2502
+[2025-09-05 13:56:45] SEND_SIGNUP: sms_sent_textblaster to=09856122843 otp=511082 alumni_id=CC-2502 http=200 resp=SMS sent successfully to 09856122843
+[2025-09-05 18:44:20] SEND_SIGNUP: contact=capstonee2@gmail.com otp=945754 alumni_id=CC-2502
+[2025-09-05 18:45:24] RECV_VERIFY_SIGNUP: contact=capstonee2@gmail.com otp=945754 alumni_id=CC-2502
+[2025-09-05 18:47:49] SEND_SIGNUP: contact=09856122843 otp=139800 alumni_id=CC-2502
+[2025-09-05 18:47:50] SEND_SIGNUP: sms_sent_textblaster to=09856122843 otp=139800 alumni_id=CC-2502 http=200 resp=SMS sent successfully to 09856122843
+[2025-09-05 19:43:17] SEND_SIGNUP: contact=capstonee2@gmail.com otp=969726 alumni_id=CC-2502
+[2025-09-05 19:44:04] RECV_VERIFY_SIGNUP: contact=capstonee2@gmail.com otp=969726 alumni_id=CC-2502
+[2025-09-05 20:07:51] SEND_SIGNUP: contact=capstonee2@gmail.com otp=189658 alumni_id=CC-2502
+[2025-09-05 20:08:17] RECV_VERIFY_SIGNUP: contact=capstonee2@gmail.com otp=189658 alumni_id=CC-2502
+[2025-09-06 13:11:25] SEND_SIGNUP: contact=09856122843 otp=568314 alumni_id=CC-2502
+[2025-09-06 13:11:35] SEND_SIGNUP: textblaster_failed to=09856122843 http=0 err=Connection timed out after 10016 milliseconds resp=
+[2025-09-06 13:12:39] SEND_SIGNUP: contact=09856122843 otp=543435 alumni_id=CC-2502
+[2025-09-06 13:12:49] SEND_SIGNUP: textblaster_failed to=09856122843 http=0 err=Connection timed out after 10000 milliseconds resp=
+[2025-09-06 13:14:13] SEND_SIGNUP: contact=09856122843 otp=219831 alumni_id=CC-2502
+[2025-09-06 13:14:13] SEND_SIGNUP: textblaster_failed to=09856122843 http=0 err=Failed to connect to 192.168.246.201 port 8080: Network unreachable resp=
+[2025-09-06 13:33:03] SEND_SIGNUP: contact=capstonee2@gmail.com otp=460242 alumni_id=CC-2502
+[2025-09-06 13:33:21] RECV_VERIFY_SIGNUP: contact=capstonee2@gmail.com otp=460242 alumni_id=CC-2502
+[2025-09-06 13:43:17] SEND_SIGNUP: contact=moseslozano20@gmail.com otp=591725 alumni_id=CC-2591
+[2025-09-06 13:43:54] RECV_VERIFY_SIGNUP: contact=moseslozano20@gmail.com otp=591725 alumni_id=CC-2591
+[2025-09-06 14:07:40] SEND_SIGNUP: contact=bkimleye@gmail.com otp=374367 alumni_id=CC-2592
+[2025-09-06 14:08:54] SEND_SIGNUP: contact=bkimleye@gmail.com otp=487833 alumni_id=CC-2592
+[2025-09-06 14:11:54] RECV_VERIFY_SIGNUP: contact=bkimleye@gmail.com otp=487833 alumni_id=CC-2592
+[2025-09-09 07:10:51] SEND_SIGNUP: contact=capstonee2@gmail.com otp=630265 alumni_id=CC-2584
+[2025-09-09 07:11:13] RECV_VERIFY_SIGNUP: contact=capstonee2@gmail.com otp=630265 alumni_id=CC-2584
+[2025-09-09 07:12:25] SEND_SIGNUP: contact=capstonee2@gmail.com otp=698179 alumni_id=SHS-2503
+[2025-09-09 07:12:48] RECV_VERIFY_SIGNUP: contact=capstonee2@gmail.com otp=698179 alumni_id=SHS-2503
+[2025-09-09 07:17:08] SEND_SIGNUP: contact=capstonee2@gmail.com otp=814426 alumni_id=SHS-2503
+[2025-09-09 07:17:31] RECV_VERIFY_SIGNUP: contact=capstonee2@gmail.com otp=814426 alumni_id=SHS-2503
+[2025-09-09 07:22:22] SEND_SIGNUP: contact=capstonee2@gmail.com otp=867732 alumni_id=SHS-2503
+[2025-09-09 07:22:43] RECV_VERIFY_SIGNUP: contact=capstonee2@gmail.com otp=867732 alumni_id=SHS-2503
+[2025-09-09 07:36:49] SEND_SIGNUP: contact=capstonee2@gmail.com otp=551532 alumni_id=SHS-2503
+[2025-09-09 07:37:05] RECV_VERIFY_SIGNUP: contact=capstonee2@gmail.com otp=551532 alumni_id=SHS-2503
+[2025-09-09 07:45:27] SEND_SIGNUP: contact=capstonee2@gmail.com otp=466585 alumni_id=SHS-2503
+[2025-09-09 07:45:53] RECV_VERIFY_SIGNUP: contact=capstonee2@gmail.com otp=466585 alumni_id=SHS-2503
+[2025-09-09 07:56:14] SEND_SIGNUP: contact=capstonee2@gmail.com otp=472634 alumni_id=SHS-2503
+[2025-09-09 07:56:29] RECV_VERIFY_SIGNUP: contact=capstonee2@gmail.com otp=472634 alumni_id=SHS-2503
+[2025-09-09 09:03:58] SEND_SIGNUP: contact=09677314559 otp=441907 alumni_id=CC-2501
+[2025-09-09 09:04:08] SEND_SIGNUP: textblaster_failed to=09677314559 http=0 err=Connection timed out after 10000 milliseconds resp=
+[2025-09-09 09:05:05] SEND_SIGNUP: contact=09677314559 otp=273717 alumni_id=CC-2501
+[2025-09-09 09:05:06] SEND_SIGNUP: sms_sent_textblaster to=09677314559 otp=273717 alumni_id=CC-2501 http=200 resp=SMS sent successfully to 09677314559
+[2025-09-09 09:06:13] RECV_VERIFY_SIGNUP: contact=09677314559 otp=273717 alumni_id=CC-2501
+[2025-09-09 13:40:35] SEND_SIGNUP: contact=09856122843 otp=446047 alumni_id=CC-2584
+[2025-09-09 13:40:35] SEND_SIGNUP: sms_sent_textblaster to=09856122843 otp=446047 alumni_id=CC-2584 http=200 resp=SMS sent successfully to 09856122843
+[2025-09-09 14:42:34] SEND_SIGNUP: contact=09856122843 otp=810064 alumni_id=CC-2584
+[2025-09-09 14:42:35] SEND_SIGNUP: sms_sent_textblaster to=09856122843 otp=810064 alumni_id=CC-2584 http=200 resp=SMS sent successfully to 09856122843
+[2025-09-09 14:43:16] RECV_VERIFY_SIGNUP: contact=09856122843 otp=810064 alumni_id=CC-2584
+[2025-09-20 00:01:33] SEND_SIGNUP: contact=capstonee2@gmail.com otp=868819 alumni_id=CC-2504
+[2025-09-20 00:02:36] RECV_VERIFY_SIGNUP: contact=capstonee2@gmail.com otp=868819 alumni_id=CC-2504
+[2025-09-20 00:05:23] SEND_SIGNUP: contact=capstonee2@gmail.com otp=953367 alumni_id=CC-2507
+[2025-09-20 00:05:50] RECV_VERIFY_SIGNUP: contact=capstonee2@gmail.com otp=953367 alumni_id=CC-2507
+[2025-09-23 00:02:58] SEND_SIGNUP: contact=capstonee2@gmail.com otp=530456 alumni_id=CC-2507
+[2025-09-23 00:03:21] RECV_VERIFY_SIGNUP: contact=capstonee2@gmail.com otp=530456 alumni_id=CC-2507

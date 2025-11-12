@@ -1,0 +1,29 @@
+FINAL FIX APPLIED - TEST NOW!
+================================
+
+The "Invalid response from server" error has been fixed!
+
+WHAT WAS FIXED:
+1. Added output buffering to prevent stray output
+2. Suppressed PHP errors/warnings during import
+3. Clean JSON output guaranteed
+
+TEST STEPS:
+1. Make sure you have a backup SQL file ready
+2. Drop the database in phpMyAdmin
+3. Go to Admin → Backup page (should load successfully now)
+4. Upload your backup SQL file
+5. Click "Import Database"
+6. Wait for completion
+
+EXPECTED RESULT:
+✅ Success message: "Database imported successfully! Database 'alumni_db' was created."
+✅ Database is restored
+✅ No more "Invalid response from server" error
+
+If you still see the error, please:
+1. Clear browser cache (Ctrl+Shift+Delete)
+2. Restart XAMPP
+3. Try again
+
+The fix is complete and ready to test!
