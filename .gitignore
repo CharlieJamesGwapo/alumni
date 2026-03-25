@@ -1,0 +1,33 @@
+# Dependencies
+node_modules/
+
+# Uploads (user-generated content)
+uploads/profile_*
+uploads/posts/*
+uploads/jobs/*
+uploads/qr_*
+!uploads/.gitkeep
+
+# Logs
+logs/*.log
+*.log
+otp_error.log
+
+# Backups
+admin/backups/*.sql
+
+# Sensitive config (credentials)
+admin/email_config.php
+
+# IDE
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Documentation (dev-only)
+docs/
+*.md
+!README.md

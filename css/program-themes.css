@@ -1,0 +1,147 @@
+/* Program Type Theme Styles */
+:root {
+    /* College Theme Colors */
+    --college-primary: #007bff;
+    --college-secondary: #6c757d;
+    --college-accent: #0056b3;
+    --college-bg: #f8f9fa;
+    
+    /* SHS Theme Colors */
+    --shs-primary: #28a745;
+    --shs-secondary: #17a2b8;
+    --shs-accent: #218838;
+    --shs-bg: #f0fff4;
+}
+
+/* Common Form Styles */
+.form-section {
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+.section-header {
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid;
+    transition: border-color 0.3s ease;
+}
+
+/* College Theme */
+body:not(.shs-theme) .section-header {
+    border-color: var(--college-primary);
+}
+
+body:not(.shs-theme) .form-control:focus {
+    border-color: var(--college-primary);
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+body:not(.shs-theme) .btn-primary {
+    background-color: var(--college-primary);
+    border-color: var(--college-primary);
+}
+
+body:not(.shs-theme) .badge-primary {
+    background-color: var(--college-primary);
+}
+
+/* SHS Theme */
+body.shs-theme .section-header {
+    border-color: var(--shs-primary);
+}
+
+body.shs-theme .form-control:focus {
+    border-color: var(--shs-primary);
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+}
+
+body.shs-theme .btn-primary {
+    background-color: var(--shs-primary);
+    border-color: var(--shs-primary);
+}
+
+body.shs-theme .badge-primary {
+    background-color: var(--shs-primary);
+}
+
+/* Animation Classes */
+.fade-enter {
+    opacity: 0;
+    transform: translateY(-10px);
+}
+
+.fade-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 300ms, transform 300ms;
+}
+
+.fade-exit {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.fade-exit-active {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 300ms, transform 300ms;
+}
+
+/* Helper Classes */
+.program-type-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.program-type-badge i {
+    font-size: 1.1em;
+}
+
+.strand-description,
+.course-description {
+    font-size: 0.875rem;
+    padding: 0.75rem;
+    margin-top: 0.5rem;
+    border-radius: 0.25rem;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .form-section {
+        padding: 1rem;
+    }
+    
+    .section-header {
+        margin-bottom: 1rem;
+        padding-bottom: 0.5rem;
+    }
+}
+
+/* Select2 Custom Styles */
+.select2-container--bootstrap4 .select2-selection--single {
+    height: calc(1.5em + 0.75rem + 2px) !important;
+}
+
+.select2-container--bootstrap4 .select2-selection--single .select2-selection__rendered {
+    line-height: calc(1.5em + 0.75rem) !important;
+}
+
+.select2-container--bootstrap4 .select2-selection--single .select2-selection__arrow {
+    height: calc(1.5em + 0.75rem) !important;
+}
+
+/* Theme-specific Select2 Styles */
+body.shs-theme .select2-container--bootstrap4 .select2-results__option--highlighted[aria-selected] {
+    background-color: var(--shs-primary) !important;
+}
+
+body:not(.shs-theme) .select2-container--bootstrap4 .select2-results__option--highlighted[aria-selected] {
+    background-color: var(--college-primary) !important;
+}
